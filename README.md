@@ -1,6 +1,11 @@
 # cybergeneration-nevar530-roll20
 Character Sheet for Cybergeneration
 
-Alot of sheet workers and organazation needed. this is not close to final.
+Sheet workers done
+Roll Template done
 
-Version 0.1
+Sheet can be play tested
+
+Player Avatar dont loading waiting for Roll20 update for Sheet Images
+
+Version 0.9 <PLAY TESTING>
