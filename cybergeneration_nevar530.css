@@ -101,7 +101,7 @@ select.select-lifepath {
   margin: 0px 0px 0px 0px;
   padding: 2px 0px 0px 2px;
   color: black;
-  background-color: aliceblue;
+  background-color: Gainsboro ;
     border-width: 2px 1px 2px 3px;
     border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
   font-size: 10px;
@@ -169,9 +169,9 @@ select.select-lifepath {
   border-color: black;
   box-shadow:  white 2px 1px 0px, black 2px 3px 0px, white 0px -1px 0px, Black -2px -2px 0px;
   background: #7D7D7D;
-background: -webkit-linear-gradient(top , White, aliceblue);
-background: -moz-linear-gradient(top , White, aliceblue);
-background: linear-gradient(top right, white, aliceblue);
+background: -webkit-linear-gradient(top , White, Gainsboro  );
+background: -moz-linear-gradient(top , White, Gainsboro );
+background: linear-gradient(top right, white, Gainsboro );
 }
 
 .box1{
@@ -210,7 +210,7 @@ background: linear-gradient(top right, white, aliceblue);
   border-style: solid;
   border-width: 2px;
   border-radius: 5px;
-  background: aliceblue;
+  background: Gainsboro ;
   height: 125px;
 }
 
@@ -450,4 +450,72 @@ input.dot[value="39"] ~ button.gt-40 > span.checked {
 }
 input.dot[value="40"] ~ button.gt-41 > span.checked {
   display: none;
+}
+
+/* ROLL TEMPLATES */
+
+.sheet-rolltemplate-skill div.sheet-template-container {
+    font-family: 'Amatic SC', cursive;
+    padding:1px;
+    width: 75%;
+  border: solid black;
+  border-color: black;
+  box-shadow:  white 2px 1px 0px, black 2px 3px 0px, white 0px -1px 0px, Black -2px -2px 0px;
+background: -webkit-linear-gradient(top , White, Gainsboro );
+background: -moz-linear-gradient(top , White, Gainsboro );
+background: linear-gradient(top right, white, Gainsboro );
+  border-width: 3px 4px 3px 5px;
+  border-radius:200% 24% 92% 25%/4% 95% 6% 95%;
+  transform: rotate(1deg);
+  text-align: center;
+}
+
+.sheet-rolltemplate-skill .sheet-template-header {
+        margin: 5px;
+    font-size: 24px;
+  border-width: 3px 4px 3px 5px;
+  border-radius:200% 24% 92% 25%/4% 95% 6% 95%;
+  transform: rotate(1deg);
+  text-align: center;
+}
+
+.sheet-rolltemplate-skill .sheet-template-row {
+}
+
+.sheet-rolltemplate-skill .sheet-template-subhead {
+  transform: rotate(-1deg);
+    margin: 5px;
+  font-size: 20px;
+  color: blue;
+}
+
+.sheet-rolltemplate-skill div {
+  transform: rotate(-1deg);
+}
+
+.sheet-rolltemplate-skill .inlinerollresult  {
+	display: inline-block;
+	text-align: center;
+    color: black;
+    background-color: none;
+    margin: 5px;
+    border-width: 2px 1px 2px 3px;
+    border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
+    font-size: 32px;
+    transform: rotate(-3deg);
+}
+
+.sheet-rolltemplate-skill .inlinerollresult.fullcrit {
+	border: 2px solid green;
+	background-color: green;
+}
+
+.sheet-rolltemplate-skill .inlinerollresult.fullfail {
+	border: 2px solid red;
+	background-color: red;
+}
+
+.sheet-rolltemplate-skill .inlinerollresult.importantroll {
+	border: 2px solid blue;
+	background-color: blue;
 }
