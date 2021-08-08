@@ -1,0 +1,528 @@
+<div class="container">
+<div class="box box1">
+  <div class="oddboxinner">
+      <h2>STATS:</h2>
+    <button type="roll" name="intbutton" style="width: 70px;" value="&{template:default} {{name=@{character_name}}} {{INTELLEGENCE=[[1d10 + @{int} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Intellegence + Mod">INTELLEGENCE</button><br>
+<input type="number" name="attr_int" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_int_max" style="width: 20px;" value="0" class="txt-input" /><br>
+        <button type="roll" name="coolbutton" style="width: 70px;" value="&{template:default} {{name=@{character_name}}} {{COOL=[[1d10 + @{cool} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Cool + Mod">COOL</button><br>
+<input type="number" name="attr_cool" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_cool_max" style="width: 20px;" value="0" class="txt-input" /><br>
+        <button type="roll" name="movebutton" style="width: 70px;" value="&{template:default} {{name=@{character_name}}} {{MOVEMENT=[[1d10 + @{move} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Movement + Mod">MOVEMENT</button><br>
+<input type="number" name="attr_move" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_move_max" style="width: 20px;" value="0" class="txt-input" /><br>
+        <button type="roll" name="techbutton" style="width: 70px;" value="&{template:default} {{name=@{character_name}}} {{TECHNICAL=[[1d10 + @{tech} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Technical + Mod">TECHNICAL</button><br>
+<input type="number" name="attr_tech" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_tech_max" style="width: 20px;" value="0" class="txt-input" /><br>
+        <button type="roll" name="attrbutton" style="width: 70px;" value="&{template:default} {{name=@{character_name}}} {{ATTRACTIVENESS=[[1d10 + @{attr} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Attractiveness + Mod">ATTRACTIVE</button><br>
+<input type="number" name="attr_attr" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_attr_max" style="width: 20px;" value="0" class="txt-input" /><br>
+        <button type="roll" name="luckbutton" style="width: 70px;" value="&{template:default} {{name=@{character_name}}} {{LUCK=[[1d10 + @{luck} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Luck + Mod">LUCK</button><br>
+<input type="number" name="attr_luck" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_luck_max" style="width: 20px;" value="0" class="txt-input" /><br>
+        <button type="roll" name="refbutton" style="width: 70px;" value="&{template:default} {{name=@{character_name}}} {{REFLEX=[[1d10 + @{ref} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Reflex + Mod">REFLEX</button><br>
+<input type="number" name="attr_ref" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_ref_max" style="width: 20px;" value="0" class="txt-input" /><br>
+        <button type="roll" name="empbutton" style="width: 70px;" value="&{template:default} {{name=@{character_name}}} {{EMPATHY=[[1d10 + @{emp} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Empathy + Mod">EMPATHY</button><br>
+<input type="number" name="attr_emp" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_emp_max" style="width: 20px;" value="0" class="txt-input" /><br>
+    <button type="roll" name="bodybutton" style="width: 70px;" value="&{template:default} {{name=@{character_name}}} {{BODY=[[1d10 + @{body} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Body + Mod">BODY</button><br>
+<input type="number" name="attr_body" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_body_max" style="width: 20px;" value="0" class="txt-input" /><br>    
+  </div>
+</div>
+<div class="box box2">
+    <div class="evenboxinner">
+    | WOUNDED MOD <input type="number" name="attr_swmod" style="width: 20px;" value="0" class="number-menu"/> 
+    | ROLL MOD <input type="number" name="attr_rollmod" style="width: 20px;" value="0" class="number-menu"/>
+    | FLIP CARD <input type="checkbox" class="block-switch" "tooltip" title="Main Menu" name="attr_idflip" value="1"> |
+        <div class="block-a">
+            <div class="idcard">
+                <div class="idgrid">   
+      <div class="id1">
+      //:CYBERGENERATION.v2<br>
+    </div>
+    <div class="id2">
+      Handle:<input type="text" name="attr_character_name" style="width: 125px;" class="txt-id" value="@{character_name}" /><br>
+      Yogang:<input type="text" name="attr_yogang" style="width: 125px;" class="txt-id" /><br>
+      Cybergen Type:<input type="text" name="attr_cybergentype" style="width: 100px;" class="txt-id" /><br>
+      IP:<input type="number" name="attr_ip" style="width: 55px;" class="txt-id"/> 
+      Eddies:<input type="number" name="attr_eddies" style="width: 55px;" class="txt-id"/><br>
+    </div>
+      <div class="id3">
+      <img alt="WAITING FOR UPDATE" name="attr_theSheetAvatar" style="width:100px;height:100px;" class="txt-id" border="1px"/><br>
+      <h1>WOUND <input type="number" name="attr_damage" style="width: 14px;" value="attr_damage" class="number-menu" readonly="true"/> STUN <input type="number" name="attr_stun" style="width: 14px;" value="attr_stun" class="number-menu" readonly="true"/></h1>
+    </div>
+    </div>
+                </div>
+            </div>
+            <div class="block-b">
+  <div class="idcard">
+   <div class="idgrid">   
+    <div class="id2">
+      Name:<input type="text" name="attr_name" style="width: 140px;" class="txt-id" /><br>
+      Legal:<input type="text" name="attr_legal" style="width: 140px;" class="txt-id" /><br>
+      Identification:<input type="text" name="attr_id" style="width: 101px;" class="txt-id" /><br>
+      Residence:<input type="text" name="attr_residence" style="width: 123px;" class="txt-id"/><br>
+      Date of Birth:<input type="text" name="attr_dob" style="width: 100px;" class="txt-id"/>
+    </div>
+      <div class="id3">
+      AGE:<input type="text" name="attr_age" style="width: 61px;" class="txt-id"/><br>
+      Gender:<input type="text" name="attr_gender" style="width: 45px;" class="txt-id"/><br>
+      HAIR:<input type="text" name="attr_hair" style="width: 58px;" class="txt-id"/>
+      Eyes:<input type="text" name="attr_eyes" style="width: 60px;" class="txt-id"/><br>
+      HT:<input type="text" name="attr_height" style="width: 20px;" class="txt-id"/>
+      WT:<input type="text" name="attr_weight" style="width: 20px;" class="txt-id"/><br>
+    </div>
+    </div>
+    </div>
+    </div>
+            <div class="damagegrid">
+    <div>
+     0 | LIGHT<br>
+  <div class="dots">
+  <input type="hidden" name="attr_damage" class="dot" value="0" />
+  <button type="action" name="act_damage_0" class="dot gt-0">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_1" class="dot gt-0 gt-1">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_2" class="dot gt-0 gt-1 gt-2">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_3" class="dot gt-0 gt-1 gt-2 gt-3">
+    <span class="checked"></span>
+   </button>   
+  <button type="action" name="act_damage_4" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+    <span class="checked"></span>
+      </button>
+</div>
+      Mortal 2<br>
+  <div class="dots">
+  <input type="hidden" name="attr_damage" class="dot" value="0" />
+  <button type="action" name="act_damage_21" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14 gt-15 gt-16 gt-17 gt-18 gt-19 gt-20 gt-21">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_22" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14 gt-15 gt-16 gt-17 gt-18 gt-19 gt-20 gt-21 gt-22">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_23" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14 gt-15 gt-16 gt-17 gt-18 gt-19 gt-20 gt-21 gt-22 gt-23">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_24" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14 gt-15 gt-16 gt-17 gt-18 gt-19 gt-20 gt-21 gt-22 gt-23 gt-24">
+    <span class="checked"></span>
+  </button>
+</div>
+      </div>
+      <div>
+          Serious<br>
+  <div class="dots">
+  <input type="hidden" name="attr_damage" class="dot" value="0" />
+  <button type="action" name="act_damage_5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_6" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_7" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_8" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8">
+    <span class="checked"></span>
+  </button>
+</div>
+        Mortal 3<br>
+  <div class="dots">
+  <input type="hidden" name="attr_damage" class="dot" value="0" />
+  <button type="action" name="act_damage_25" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14 gt-15 gt-16 gt-17 gt-18 gt-19 gt-20 gt-21 gt-22 gt-23 gt-24 gt-25">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_26" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14 gt-15 gt-16 gt-17 gt-18 gt-19 gt-20 gt-21 gt-22 gt-23 gt-24 gt-25 gt-26">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_27" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14 gt-15 gt-16 gt-17 gt-18 gt-19 gt-20 gt-21 gt-22 gt-23 gt-24 gt-25 gt-26 gt-27">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_28" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14 gt-15 gt-16 gt-17 gt-18 gt-19 gt-20 gt-21 gt-22 gt-23 gt-24 gt-25 gt-26 gt-27 gt-28">
+    <span class="checked"></span>
+  </button>
+</div>
+      </div>
+      <div>
+        Critical<br>
+  <div class="dots">
+  <input type="hidden" name="attr_damage" class="dot" value="0" />
+  <button type="action" name="act_damage_9" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_10" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_11" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_12" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12">
+    <span class="checked"></span>
+  </button>
+</div>
+        Mortal 4<br>
+  <div class="dots">
+  <input type="hidden" name="attr_damage" class="dot" value="0" />
+  <button type="action" name="act_damage_29" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14 gt-15 gt-16 gt-17 gt-18 gt-19 gt-20 gt-21 gt-22 gt-23 gt-24 gt-25 gt-26 gt-27 gt-28 gt-29">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_30" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14 gt-15 gt-16 gt-17 gt-18 gt-19 gt-20 gt-21 gt-22 gt-23 gt-24 gt-25 gt-26 gt-27 gt-28 gt-29 gt-30">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_31" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14 gt-15 gt-16 gt-17 gt-18 gt-19 gt-20 gt-21 gt-22 gt-23 gt-24 gt-25 gt-26 gt-27 gt-28 gt-29 gt-30 gt-31">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_32" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14 gt-15 gt-16 gt-17 gt-18 gt-19 gt-20 gt-21 gt-22 gt-23 gt-24 gt-25 gt-26 gt-27 gt-28 gt-29 gt-30 gt-31 gt-32">
+    <span class="checked"></span>
+  </button>
+</div>
+      </div>
+      <div>
+      Mortal 0<br>
+  <div class="dots">
+  <input type="hidden" name="attr_damage" class="dot" value="0" />
+  <button type="action" name="act_damage_13" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_14" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_15" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14 gt-15">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_16" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14 gt-15 gt-16">
+    <span class="checked"></span>
+  </button>
+</div>
+        Mortal 5<br>
+  <div class="dots">
+  <input type="hidden" name="attr_damage" class="dot" value="0" />
+  <button type="action" name="act_damage_33" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14 gt-15 gt-16 gt-17 gt-18 gt-19 gt-20 gt-21 gt-22 gt-23 gt-24 gt-25 gt-26 gt-27 gt-28 gt-29 gt-30 gt-31 gt-32 gt-33">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_34" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14 gt-15 gt-16 gt-17 gt-18 gt-19 gt-20 gt-21 gt-22 gt-23 gt-24 gt-25 gt-26 gt-27 gt-28 gt-29 gt-30 gt-31 gt-32 gt-33 gt-34">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_35" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14 gt-15 gt-16 gt-17 gt-18 gt-19 gt-20 gt-21 gt-22 gt-23 gt-24 gt-25 gt-26 gt-27 gt-28 gt-29 gt-30 gt-31 gt-32 gt-33 gt-34 gt-35">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_36" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14 gt-15 gt-16 gt-17 gt-18 gt-19 gt-20 gt-21 gt-22 gt-23 gt-24 gt-25 gt-26 gt-27 gt-28 gt-29 gt-30 gt-31 gt-32 gt-33 gt-34 gt-35 gt-36">
+    <span class="checked"></span>
+  </button>
+</div>
+      </div>
+      <div>
+      Mortal 1<br>
+  <div class="dots">
+  <input type="hidden" name="attr_damage" class="dot" value="0" />
+  <button type="action" name="act_damage_17" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14 gt-15 gt-16 gt-17">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_18" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14 gt-15 gt-16 gt-17 gt-18">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_19" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14 gt-15 gt-16 gt-17 gt-18 gt-19">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_20" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14 gt-15 gt-16 gt-17 gt-18 gt-19 gt-20">
+    <span class="checked"></span>
+  </button>
+</div>
+        Mortal 6<br>
+  <div class="dots">
+  <input type="hidden" name="attr_damage" class="dot" value="0" />
+  <button type="action" name="act_damage_37" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14 gt-15 gt-16 gt-17 gt-18 gt-19 gt-20 gt-21 gt-22 gt-23 gt-24 gt-25 gt-26 gt-27 gt-28 gt-29 gt-30 gt-31 gt-32 gt-33 gt-34 gt-35 gt-36 gt-37">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_38" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14 gt-15 gt-16 gt-17 gt-18 gt-19 gt-20 gt-21 gt-22 gt-23 gt-24 gt-25 gt-26 gt-27 gt-28 gt-29 gt-30 gt-31 gt-32 gt-33 gt-34 gt-35 gt-36 gt-37 gt-38">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_39" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14 gt-15 gt-16 gt-17 gt-18 gt-19 gt-20 gt-21 gt-22 gt-23 gt-24 gt-25 gt-26 gt-27 gt-28 gt-29 gt-30 gt-31 gt-32 gt-33 gt-34 gt-35 gt-36 gt-37 gt-38 gt-39">
+    <span class="checked"></span>
+  </button>
+  <button type="action" name="act_damage_40" class="dot gt-0 gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9 gt-10 gt-11 gt-12 gt-13 gt-14 gt-15 gt-16 gt-17 gt-18 gt-19 gt-20 gt-21 gt-22 gt-23 gt-24 gt-25 gt-26 gt-27 gt-28 gt-29 gt-30 gt-31 gt-32 gt-33 gt-34 gt-35 gt-36 gt-37 gt-38 gt-39 gt-40">
+    <span class="checked"></span>
+  </button>
+</div>
+      </div>
+    </div>
+    <hr>
+            Save <input type="number" name="attr_save" style="width: 20px;" class="number-id" value="@{body} + @{cool}" readonly="true"/> BTM <input type="number" name="attr_btm" style="width: 20px;" class="number-id" value="0"/> DAM + <input type="number" name="attr_dmgplus" style="width: 20px;" class="number-id" value="0"/> Run <input type="number" name="attr_run" style="width: 20px;" class="number-id" value="@{move} * 3" readonly="true"/> Leap <input type="number" name="attr_leap" style="width: 20px;" class="number-id" value="@{run} / 4" readonly="true"/> Carry <input type="number" name="attr_carry" style="width: 20px;" class="number-id" value="@{body} * 10" readonly="true"/><br>
+            <hr>
+            <div class="armorgrid">
+        <div>
+        LOC<br>
+          <input type="text" name="AR" style="width: 20px;" class="number-id" value="AR" readonly="true"/><br>
+          <input type="text" name="HP" style="width: 20px;" class="number-id" value="HP"readonly="true"/><br>
+        </div>
+        <div>
+          Head 1<br>
+          <input type="number" name="attr_headar" style="width: 20px;" class="number-id" value="0"/><br>
+          <input type="number" name="attr_headhp" style="width: 20px;" class="number-id" value="0"/><br>
+        </div>
+        <div>
+          Torso 2-4<br>
+          <input type="number" name="attr_torsoar" style="width: 20px;" class="number-id" value="0"/><br>
+          <input type="number" name="attr_torsohp" style="width: 20px;" class="number-id" value="0"/><br>
+        </div>
+        <div>
+          R.Arm 5<br>
+          <input type="number" name="attr_rarmar" style="width: 20px;" class="number-id" value="0"/><br>
+          <input type="number" name="attr_rarmhp" style="width: 20px;" class="number-id" value="0"/><br>
+        </div>
+        <div>
+          L. Arm 6<br>
+          <input type="number" name="attr_larmar" style="width: 20px;" class="number-id" value="0"/><br>
+          <input type="number" name="attr_larmhp" style="width: 20px;" class="number-id" value="0"/><br>
+        </div>
+        <div>
+          R. Leg 7-8<br>
+          <input type="number" name="attr_rlegar" style="width: 20px;" class="number-id" value="0"/><br>
+          <input type="number" name="attr_rleghp" style="width: 20px;" class="number-id" value="0"/><br>
+        </div>
+        <div>
+          L. Leg 9-0<br>
+          <input type="number" name="attr_llegar" style="width: 20px;" class="number-id" value="0"/><br>
+          <input type="number" name="attr_lleghp" style="width: 20px;" class="number-id" value="0"/><br>
+        </div>
+       </div>
+        </div>
+</div>
+<div class="box box3">
+  <div class="oddboxinner">
+   <select "tooltip" title="Main Menu" name="attr_menu" style="width: 200px;" class="select-lifepath">
+                        <option value="c" selected="selected">SKILLS</option>
+                        <option value="d">ARMOR & WEAPONS</option>
+                        <option value="e">MEDICAL DOCUMENTATION</option>
+                        <option value="f">INVENTORY</option>
+                        <option value="g">NOTES</option>
+                    </select><br>
+    <div class="box4">
+        <input type="checkbox" name="attr_menu" value="c" class="hidden2 hider2" checked>
+            <div class="block-c">
+                <div>
+                    <h3>SKILLS TO PAY THE BILLS!</h3>
+                    <div class="skillgrid">
+                    <fieldset class="repeating_skills">
+                            <input type="hidden" name="attr_skillstat" value="@{skillstat}">
+                            <button type="roll" name="roll_skill" style="width: 15px; font-size:16px"; class="txt-btn" value="&{template:default} {{name=@{character_name}}} {{@{skillname}=[[1d10[Dice] + @{skillstat}[STAT] + @{skilllvl}[LEVEL] + @{skillmod}[MOD] @{swmod}[WOUNDED MOD] + @{extra}[Extra attack] + @{rollmod}[Roll Mod]]]}}">&#9883;</button>
+                            <input name="attr_skillname" type="text" style="width: 100px;" class="number-menu"/>
+                            <select name="attr_skillstat" style="width: 50px;" class="select-lifepath">
+                                <option value="@{int}">INTELLEGENCE</option>
+                                <option value="@{cool}">COOL</option>
+                                <option value="@{move}">MOVEMENT</option>
+                                <option value="@{tech}">TECHNICAL</option>
+                                <option value="@{attr}">ATTRACTIVENESS</option>
+                                <option value="@{luck}">LUCK</option>
+                                <option value="@{ref}">REFLEX</option>
+                                <option value="@{emp}">EMPATHY</option>
+                                <option value="@{body}">BODY</option>
+                            </select>
+                            Level <input type="number" name="attr_skilllvl" style="width: 20px;" value="0" class="number-menu"/>
+                            MOD <input type="number" name="attr_skillmod" style="width: 20px;" value="0" class="number-menu"/>
+                            <hr>
+                        </fieldset>
+                </div>
+            </div>
+            </div>
+        <input type="checkbox" name="attr_menu" value="d" class="hidden2 hider2" checked>
+            <div class="block-c">
+                    <h3>PROTECT YOUR SELF!</h3>
+                    <div class="armorgrid2">
+                        <div>
+                        <h2>HEAD <input name="attr_a1" type="text" style="width: 65px;" class="number-menu"/></h2>
+                        AR <input type="number" name="attr_ar1" style="width: 15px;" value="0" class="number-menu"/>
+                        HP <input type="number" name="attr_a1hp" style="width: 15px;" value="0" class="number-menu"/>
+                        EV <input type="number" name="attr_a1enc" style="width: 15px;" value="0" class="number-menu"/>
+                        </div>
+                        <div>
+                        <h2>BODY <input name="attr_a2" type="text" style="width: 65px;" class="number-menu"/></h2>
+                        AR <input type="number" name="attr_ar2" style="width: 15px;" value="0" class="number-menu"/>
+                        HP <input type="number" name="attr_a2hp" style="width: 15px;" value="0" class="number-menu"/>
+                        EV <input type="number" name="attr_a2enc" style="width: 15px;" value="0" class="number-menu"/>
+                        </div>
+                        <div>
+                        <h2>LEGS <input name="attr_a3" type="text" style="width: 65px;" class="number-menu"/></h2>
+                        AR <input type="number" name="attr_ar3" style="width: 15px;" value="0" class="number-menu"/>
+                        HP <input type="number" name="attr_a3hp" style="width: 15px;" value="0" class="number-menu"/>
+                        EV <input type="number" name="attr_a3enc" style="width: 15px;" value="0" class="number-menu"/>
+                        </div>
+                        </div>
+                        <h3>WEAPONS
+                            <button type="roll" name="roll_init" style="width: 50px; font-size:16px"; class="txt-btn" value="&{template:default} {{name=@{character_name}}} {{INITATIVE=[[1d10[ROLL] + @{ref}[REFLEX]]]}}">INITATIVE</button></h3>
+                        <fieldset class="repeating_weapons">
+                            <button type="roll" name="roll_weapon_dmg" style="display: none;" value="@{DMG}"></button>
+                            <input type="hidden" name="attr_WeaponMod" value="@{Melee}">
+                            <button type="roll" name="roll_attack" style="width: 15px; font-size:16px"; class="txt-btn" value="&{template:default} {{name=@{character_name}}} {{@{Weaponname}=[[1d10[Roll] + @{ref}[REFLEX]  + @{wslvl}[SKILL] + @{acc}[ACCURACY] + @{swmod}[WOUNDED] + @{extra}[EXTRA ATTACK] + @{rollmod}[ROLL MOD]]]}}">&#8853;</button>
+                            <input name="attr_Weaponname" type="text" style="width: 125px;" class="number-menu"/>
+                            SKILL<select name="attr_Weapontype" style="width: 100px;" class="select-lifepath">
+                                <option value="Brawling}">BRAWLING</option>
+                                <option value="Martial Arts">MARTIAL ARTS</option>
+                                <option value="Melee">MELEE</option>
+                                <option value="Pistol">PISTOL</option>
+                                <option value="SMG">SUB-MACHINE GUN</option>
+                                <option value="SMG (Autofire)">SUB-MACHINE GUN (AUTOFIRE)</option>
+                                <option value="Shotgun (Slug)">SHOTGUN (SLUG)</option>
+                                <option value="Rifle">ASSALT RIFLE</option>
+                                <option value="Rifle (Autofire)">ASSAULT RIFLE (AUTOFIRE)</option>
+                                <option value="Bow/Crossbow">BOW/CROSSBOW</option>
+                                <option value="Grenade Launcher">Light Cannon</option>
+                                <option value="Rocket Launcher">ROCKET LAUNCHER</option>
+                            </select> 
+                            <input type="number" name="attr_wslvl" style="width: 20px;" value="0" class="number-menu"/><br>
+                            ACCURACY <input type="number" name="attr_acc" style="width: 20px;" value="0" class="number-menu"/>
+                            <button type="roll" name="roll_weapon_dmg" class="txt-btn" value="&{template:default} {{name=@{character_name}}} {{DAMAGE=[[@{DMG} + @{dmgplus}]]}}">DAMAGE</button><input type="text" name="attr_DMG" style="width: 50px;" value="0" class="number-menu"/> 
+                            CLIP <input type="number" name="attr_clip" style="width: 30px;" value="@{clip}"class="number-menu" />/<input type="number" name="attr_clip_max" style="width: 30px;" value="@{clip_max}"class="number-menu" /> 
+                            RATE OF FIRE <input type="number" name="attr_rof" style="width: 20px;" value="0" class="number-menu"/>
+                            <hr>
+                        </fieldset>
+                    </div>
+        <input type="checkbox" name="attr_menu" value="e" class="hidden2 hider2" checked>
+            <div class="block-c">
+                <h3>TELL ME WHERE IT HURTS!</h3>
+                <fieldset class="repeating_health">
+                            LOCATION <input type="text" name="attr_medicallocation" style="width: 75px;" value="0" class="number-menu"/>
+                            DAMAGE <input type="text" name="attr_medicaldmg" style="width: 75px;" value="0" class="number-menu"/>
+                            HEAL <input type="text" name="attr_medicalheal" style="width: 75px;" value="0" class="number-menu"/><br>
+                            DESCRIPTION <input type="text" name="attr_medicaldesc" style="width: 270px;" value="0" class="number-menu"/>
+                            <hr>
+                        </fieldset>
+            </div> 
+        <input type="checkbox" name="attr_menu" value="f" class="hidden2 hider2" checked>
+            <div class="block-c">
+                <div>
+                    <div class="skillgrid">
+                        <h3>ALL YOUR STUFF!</h3>
+                    <fieldset class="repeating_items">
+                            STUFF <input type="text" name="attr_stuff" style="width: 80px;" value="0" class="number-menu"/>
+                            COST <input type="text" name="attr_cost" style="width: 30px;" value="0" class="number-menu"/>
+                            <hr>
+                        </fieldset>
+                </div>
+            </div>
+            </div>
+        <input type="checkbox" name="attr_menu" value="g" class="hidden2 hider2" checked>
+            <div class="block-c">
+                <div>
+                    <div class="skillgrid">
+                        <h3>WRITE THAT DOWN!</h3>
+                        <hr>
+                        <textarea name="attr_notepad" style="height: 150px; width: 270px;">
+                        </textarea>
+                        <hr>
+                </div>
+            </div>
+            </div>            
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+  
+<script type="text/worker">
+on("change:damage sheet:opened", function(){
+    getAttrs(["damage", "stun"], function(values) {
+        let damage = parseInt(values.damage)||0;
+        let stun = parseInt(values.stun)||0;
+        let result = '';
+        if (damage <= 4){ 
+            result = 0;
+            }
+        else if (damage >= 5 && damage <= 8){ 
+            result = 1;
+            }
+        else if (damage >= 9 && damage <= 12){ 
+            result = 2;
+            }
+        else if (damage >= 13 && damage <= 16){ 
+            result = 3;
+            }
+        else if (damage >= 17 && damage <= 20){ 
+            result = 4;
+            }
+        else if (damage >= 21 && damage <= 24){ 
+            result = 5;
+            }
+        else if (damage >= 25 && damage <= 28){ 
+            result = 6;
+            }
+        else if (damage >= 29 && damage <= 32){ 
+            result = 7;
+            }
+        else if (damage >= 31 && damage <= 36){ 
+            result = 8;
+            }
+        else if (damage >= 35 && damage <= 40){ 
+            result = 9;
+            }             
+            setAttrs({ 'stun': result });
+    });
+});
+</script>  
+  
+  
+ <script type="text/worker">
+	on("sheet:opened", function() {  
+	  getAttrs(["character_avatar"], function(values) {
+		let theAvatarURL=values.character_avatar;
+		                     
+		setAttrs({
+			theSheetAvatar:theAvatarURL
+		});
+	  });
+	});
+</script>
+
+<script type="text/worker">
+  const damageValues = ["0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40"];
+  damageValues.forEach(function(value) {
+    on(`clicked:damage_${value}`, function() {
+      setAttrs({
+        "damage": value
+      });
+    });
+  });
+</script>
+
+<script type="text/worker">
+on("change:ref_max change:tev sheet:opened", function()
+{
+  getAttrs(["ref_max", "tev"], function(values)
+  {
+  let ref_max = parseInt(values.ref_max)||0;
+  let tev = parseInt(values.tev)||0;
+  let ref = (ref_max - tev)
+      setAttrs({
+       "ref" : (ref)
+    });
+  });
+});
+</script>
+
+<script type="text/worker">
+on("change:move_max change:tev sheet:opened", function()
+{
+  getAttrs(["move_max", "tev"], function(values)
+  {
+  let move_max = parseInt(values.move_max)||0;
+  let tev = parseInt(values.tev)||0;
+  let move = (move_max - tev)
+      setAttrs({
+       "move" : (move)
+    });
+  });
+});
+</script>
+
+<script type="text/worker">
+on("change:a1enc change:a2enc change:a3enc sheet:opened", function()
+{
+  getAttrs(["a1enc", "a2enc", "a3enc", "tev"], function(values)
+  {
+    let a1enc = parseInt(values.a1enc)||0;
+    let a2enc = parseInt(values.a2enc)||0;
+    let a3enc = parseInt(values.a3enc)||0;
+setAttrs({
+       "tev" : (a1enc + a2enc + a3enc)
+    });
+  });
+});
+</script>
