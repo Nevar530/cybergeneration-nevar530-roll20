@@ -302,7 +302,7 @@
                     <div class="skillgrid">
                     <fieldset class="repeating_skills">
                             <input type="hidden" name="attr_skillstat" value="@{skillstat}">
-                            <button type="roll" name="roll_skill" style="width: 15px; font-size:16px"; class="txt-btn" value="&{template:skill} {{name=@{character_name}}} {{rollname=@{skillname}}} {{roll=[[1d10[Dice] + @{skillstat}[STAT] + @{skilllvl}[LEVEL] + @{skillmod}[MOD] @{swmod}[WOUNDED MOD] + @{extra}[Extra attack] + @{rollmod}[Roll Mod]]]}}">&#9883;</button>
+                            <button type="roll" name="roll_skill" style="width: 15px; font-size:16px"; class="txt-btn" value="&{template:skill} {{name=@{character_name}}} {{rollname=@{skillname}}} {{roll=[[1d10[Dice] + @{skillstat}[STAT] + @{skilllvl}[LEVEL] + @{skillmod}[MOD] @{swmod}[WOUNDED MOD] + @{rollmod}[Roll Mod]]]}}">&#9883;</button>
                             <input name="attr_skillname" type="text" style="width: 100px;" class="number-menu"/>
                             <select name="attr_skillstat" style="width: 50px;" class="select-lifepath">
                                 <option value="@{int}">INTELLEGENCE</option>
@@ -350,7 +350,7 @@
                         <fieldset class="repeating_weapons">
                             <button type="roll" name="roll_weapon_dmg" style="display: none;" value="@{DMG}"></button>
                             <input type="hidden" name="attr_WeaponMod" value="@{Melee}">
-                            <button type="roll" name="roll_attack" style="width: 15px; font-size:16px"; class="txt-btn" value="&{template:skill} {{name=@{character_name}}} {{rollname=@{Weaponname}}} {{roll=[[1d10[Roll] + @{ref}[REFLEX]  + @{wslvl}[SKILL] + @{acc}[ACCURACY] + @{swmod}[WOUNDED] + @{extra}[EXTRA ATTACK] + @{rollmod}[ROLL MOD]]]}}">&#8853;</button>
+                            <button type="roll" name="roll_attack" style="width: 15px; font-size:16px"; class="txt-btn" value="&{template:skill} {{name=@{character_name}}} {{rollname=@{Weaponname}}} {{roll=[[1d10[Roll] + @{ref}[REFLEX]  + @{wslvl}[SKILL] + @{acc}[ACCURACY] + @{swmod}[WOUNDED] + @{rollmod}[ROLL MOD]]]}}">&#8853;</button>
                             <input name="attr_Weaponname" type="text" style="width: 125px;" class="number-menu"/>
                             SKILL<select name="attr_Weapontype" style="width: 100px;" class="select-lifepath">
                                 <option value="Brawling}">BRAWLING</option>
