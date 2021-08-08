@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.charsheet hr{
+    margin: 2px;
+}
+
+.hidden {
+  display: none;
+}
+.hider:not(:checked) + div {
+  display: none;
+}
+
+.hidden2 {
+  display: none;
+}
+.hider2:not(:checked) + div {
+  display: none;
+}
+
+.charsheet button[type="roll"].txt-btn:before{
+    content:'';
+}
+
+.charsheet h1{
+  font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.charsheet h2{
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.txt-btn{
+    font-family: 'Amatic SC', cursive;
+    font-size: 15px;
+    Background: ghostwhite;
+    margin: 0px 0px 0px 0px;
+    border-width: 2px 1px 2px 3px;
+    border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
+    border-color: black;
+}
+
+.number-menu{
+    font-family: 'Amatic SC', cursive;
+    font-size: 12px;
+    Background: ghostwhite;
+    margin: 0px 0px 0px 0px;
+    border-width: 2px 1px 2px 3px;
+    border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
+    border-color: black;
+    text-align: center;
+    padding: 0px;
+}
+
+.number-id{
+    font-family: 'Amatic SC', cursive;
+    font-size: 15px;
+    Background: ghostwhite;
+    margin: 0px 0px 0px 0px;
+    border-width: 2px 1px 2px 3px;
+    border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
+    border-color: black;
+    text-align: center;
+}
+
+.txt-id{
+    font-family: 'Amatic SC', cursive;
+    font-size: 12px;
+    padding: 0px;
+    margin:1px;
+    Background: ghostwhite;
+    border-width: 2px 1px 2px 3px;
+    border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
+    border-color: black;
+    text-align: center;
+}
+
+.txt-input{
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    Background: none;
+    border-width: 0px;
+}
+
+select.select-lifepath {
+  width: 40px;
+  height: 20px;
+  margin: 0px 0px 0px 0px;
+  padding: 2px 0px 0px 2px;
+  color: black;
+  background-color: aliceblue;
+    border-width: 2px 1px 2px 3px;
+    border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
+  font-size: 10px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 120px 350px;
+  gap: 5px 5px; 
+  grid-template-areas: 
+    "box1 box2"
+    "box1 box3"
+    ". .";
+    font-family: 'Amatic SC', cursive;
+}
+
+.idgrid{
+  display: grid;
+  grid-template-columns: 175px 100px;
+  gap: 5px 5px; 
+  grid-template-areas: 
+    "id1 id3"
+    "id2 id3";
+}
+
+/*.skillgrid {
+    display:grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px;
+    padding: 1px;
+
+}*/
+
+.repcontainer[data-groupname=repeating_skills] .repitem {
+  display: inline-block;
+  width: calc(50% - 2px);
+}
+
+.repcontainer[data-groupname=repeating_skills] .repitem:nth-child(even) {
+  margin-left: 0px;
+}
+
+.repcontainer[data-groupname=repeating_items] .repitem {
+  display: inline-block;
+  width: calc(50% - 2px);
+}
+
+.repcontainer[data-groupname=repeating_items] .repitem:nth-child(even) {
+  margin-left: 0px;
+}
+
+.armorgrid2 {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0px;
+    padding: 1px;
+
+}
+
+.box{
+  padding:1px;
+  background:white;
+  border: solid black;
+  border-color: black;
+  box-shadow:  white 2px 1px 0px, black 2px 3px 0px, white 0px -1px 0px, Black -2px -2px 0px;
+  background: #7D7D7D;
+background: -webkit-linear-gradient(top , White, aliceblue);
+background: -moz-linear-gradient(top , White, aliceblue);
+background: linear-gradient(top right, white, aliceblue);
+}
+
+.box1{
+  grid-area: box1;
+  border-width: 3px 4px 3px 5px;
+  border-radius:200% 24% 92% 25%/4% 95% 6% 95%;
+  transform: rotate(1deg);
+  text-align: center;
+  height: 575px;
+}
+.box2{
+  grid-area: box2;
+  text-align: center;
+  height: 355px;
+  border-width: 3px 3px 5px 5px;
+  border-radius:4% 5% 6% 95%/95% 54% 20% 5%;
+  transform: rotate(-1deg);
+  font-size:15px;
+}
+
+.box3{
+  grid-area: box3;
+  border-width: 5px 3px 3px 5px;
+  border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+  transform: rotate(1deg);
+    font-size:12px;
+}
+
+.box4{
+  transform: rotate(1deg);
+}
+
+.idcard{
+  margin:0px 0px 0px 0px;
+  padding: 2px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  background: aliceblue;
+  height: 125px;
+}
+
+.oddboxinner{
+  margin:0px 10px;
+  transform: rotate(-1deg);
+}
+
+.evenboxinner{
+  margin:0px 10px;
+  transform: rotate(1deg);
+}
+
+.id1{
+  grid-area: id1;
+  font-size:20px;  
+}
+
+.id2{
+  grid-area: id2;
+  font-size:14px;
+}
+
+.id3{
+  grid-area: id3;
+  font-size: 15px;
+  margin:10px 0px 0px 10px;
+}
+
+.block-a,
+.block-switch:checked ~ .block-b {
+  display: block;
+}
+
+.block-b,
+.block-switch:checked ~ .block-a {
+  display: none;
+}
+
+.block-c,
+.block-switch2:checked ~ .block-d {
+  display: block;
+}
+
+.block-d,
+.block-switch2:checked ~ .block-c {
+  display: none;
+}
+
+.damagegrid {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2px;
+  padding: 2px 0px 2px 15px;
+  text-align: left;
+}
+
+.armorgrid {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2px;
+  padding: 1px;
+  text-align: center;
+
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.dots{
+  display:flex;
+}
+/* Configure the button styling. This example makes it look like a radio. */
+button.dot {
+  padding: 0;
+  border: solid 1px #a8a8a8;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  border-radius: 0% 50% 0% 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.dot > span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: red;
+}
+
+/* Hide the "checked" section of the radio if the hidden attribute value is greater than the button value */
+input.dot[value="0"] ~ button.gt-1 > span.checked {
+  display: none;
+}  
+input.dot[value="1"] ~ button.gt-2 > span.checked {
+  display: none;
+}
+input.dot[value="2"] ~ button.gt-3 > span.checked {
+  display: none;
+}
+input.dot[value="3"] ~ button.gt-4 > span.checked {
+  display: none;
+}
+input.dot[value="4"] ~ button.gt-5 > span.checked {
+  display: none;
+}
+input.dot[value="5"] ~ button.gt-6 > span.checked {
+  display: none;
+}
+input.dot[value="6"] ~ button.gt-7 > span.checked {
+  display: none;
+}
+input.dot[value="7"] ~ button.gt-8 > span.checked {
+  display: none;
+}
+input.dot[value="8"] ~ button.gt-9 > span.checked {
+  display: none;
+}
+input.dot[value="9"] ~ button.gt-10 > span.checked {
+  display: none;
+}
+input.dot[value="10"] ~ button.gt-11 > span.checked {
+  display: none;
+}
+input.dot[value="11"] ~ button.gt-12 > span.checked {
+  display: none;
+}
+input.dot[value="12"] ~ button.gt-13 > span.checked {
+  display: none;
+}
+input.dot[value="13"] ~ button.gt-14 > span.checked {
+  display: none;
+}
+input.dot[value="14"] ~ button.gt-15 > span.checked {
+  display: none;
+}
+input.dot[value="15"] ~ button.gt-16 > span.checked {
+  display: none;
+}
+input.dot[value="16"] ~ button.gt-17 > span.checked {
+  display: none;
+}
+input.dot[value="17"] ~ button.gt-18 > span.checked {
+  display: none;
+}
+input.dot[value="18"] ~ button.gt-19 > span.checked {
+  display: none;
+}
+input.dot[value="19"] ~ button.gt-20 > span.checked {
+  display: none;
+}
+input.dot[value="20"] ~ button.gt-21 > span.checked {
+  display: none;
+}
+input.dot[value="21"] ~ button.gt-22 > span.checked {
+  display: none;
+}
+input.dot[value="22"] ~ button.gt-23 > span.checked {
+  display: none;
+}
+input.dot[value="23"] ~ button.gt-24 > span.checked {
+  display: none;
+}
+input.dot[value="24"] ~ button.gt-25 > span.checked {
+  display: none;
+}
+input.dot[value="25"] ~ button.gt-26 > span.checked {
+  display: none;
+}
+input.dot[value="26"] ~ button.gt-27 > span.checked {
+  display: none;
+}
+input.dot[value="27"] ~ button.gt-28 > span.checked {
+  display: none;
+}
+input.dot[value="28"] ~ button.gt-29 > span.checked {
+  display: none;
+}
+input.dot[value="29"] ~ button.gt-30 > span.checked {
+  display: none;
+}
+input.dot[value="30"] ~ button.gt-31 > span.checked {
+  display: none;
+}
+input.dot[value="31"] ~ button.gt-32 > span.checked {
+  display: none;
+}
+input.dot[value="32"] ~ button.gt-33 > span.checked {
+  display: none;
+}
+input.dot[value="33"] ~ button.gt-34 > span.checked {
+  display: none;
+}
+input.dot[value="34"] ~ button.gt-35 > span.checked {
+  display: none;
+}
+input.dot[value="35"] ~ button.gt-36 > span.checked {
+  display: none;
+}
+input.dot[value="36"] ~ button.gt-37 > span.checked {
+  display: none;
+}
+input.dot[value="37"] ~ button.gt-38 > span.checked {
+  display: none;
+}
+input.dot[value="38"] ~ button.gt-39 > span.checked {
+  display: none;
+}
+input.dot[value="39"] ~ button.gt-40 > span.checked {
+  display: none;
+}
+input.dot[value="40"] ~ button.gt-41 > span.checked {
+  display: none;
+}
