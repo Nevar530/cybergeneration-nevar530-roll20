@@ -2,23 +2,23 @@
 <div class="box box1">
   <div class="oddboxinner">
       <h2>STATS:</h2>
-    <button type="roll" name="intbutton" style="width: 70px;" value="&{template:default} {{name=@{character_name}}} {{INTELLEGENCE=[[1d10 + @{int} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Intellegence + Mod">INTELLEGENCE</button><br>
+    <button type="roll" name="intbutton" style="width: 70px;" value="&{template:skill} {{name=@{character_name}}} {{rollname=INTELLEGENCE}} {{roll=[[1d10 + @{int} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Intellegence + Mod">INTELLEGENCE</button><br>
 <input type="number" name="attr_int" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_int_max" style="width: 20px;" value="0" class="txt-input" /><br>
-        <button type="roll" name="coolbutton" style="width: 70px;" value="&{template:default} {{name=@{character_name}}} {{COOL=[[1d10 + @{cool} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Cool + Mod">COOL</button><br>
+        <button type="roll" name="coolbutton" style="width: 70px;" value="&{template:skill} {{name=@{character_name}}} {{rollname=COOL}} {{roll=[[1d10 + @{cool} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Cool + Mod">COOL</button><br>
 <input type="number" name="attr_cool" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_cool_max" style="width: 20px;" value="0" class="txt-input" /><br>
-        <button type="roll" name="movebutton" style="width: 70px;" value="&{template:default} {{name=@{character_name}}} {{MOVEMENT=[[1d10 + @{move} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Movement + Mod">MOVEMENT</button><br>
+        <button type="roll" name="movebutton" style="width: 70px;" value="&{template:skill} {{name=@{character_name}}} {{rollname=MOVEMENT}} {{roll=[[1d10 + @{move} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Movement + Mod">MOVEMENT</button><br>
 <input type="number" name="attr_move" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_move_max" style="width: 20px;" value="0" class="txt-input" /><br>
-        <button type="roll" name="techbutton" style="width: 70px;" value="&{template:default} {{name=@{character_name}}} {{TECHNICAL=[[1d10 + @{tech} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Technical + Mod">TECHNICAL</button><br>
+        <button type="roll" name="techbutton" style="width: 70px;" value="&{template:skill} {{name=@{character_name}}} {{rollname=TECHNICAL}} {{roll=[[1d10 + @{tech} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Technical + Mod">TECHNICAL</button><br>
 <input type="number" name="attr_tech" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_tech_max" style="width: 20px;" value="0" class="txt-input" /><br>
-        <button type="roll" name="attrbutton" style="width: 70px;" value="&{template:default} {{name=@{character_name}}} {{ATTRACTIVENESS=[[1d10 + @{attr} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Attractiveness + Mod">ATTRACTIVE</button><br>
+        <button type="roll" name="attrbutton" style="width: 70px;" value="&{template:skill} {{name=@{character_name}}} {{rollname=ATTRACTIVENESS}} {{roll=[[1d10 + @{attr} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Attractiveness + Mod">ATTRACTIVENESS</button><br>
 <input type="number" name="attr_attr" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_attr_max" style="width: 20px;" value="0" class="txt-input" /><br>
-        <button type="roll" name="luckbutton" style="width: 70px;" value="&{template:default} {{name=@{character_name}}} {{LUCK=[[1d10 + @{luck} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Luck + Mod">LUCK</button><br>
+        <button type="roll" name="luckbutton" style="width: 70px;" value="&{template:skill} {{name=@{character_name}}} {{rollname=LUCK}} {{roll=[[1d10 + @{luck} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Luck + Mod">LUCK</button><br>
 <input type="number" name="attr_luck" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_luck_max" style="width: 20px;" value="0" class="txt-input" /><br>
-        <button type="roll" name="refbutton" style="width: 70px;" value="&{template:default} {{name=@{character_name}}} {{REFLEX=[[1d10 + @{ref} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Reflex + Mod">REFLEX</button><br>
+        <button type="roll" name="refbutton" style="width: 70px;" value="&{template:skill} {{name=@{character_name}}} {{rollname=REFLEX}} {{roll=[[1d10 + @{ref} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Reflex + Mod">REFLEX</button><br>
 <input type="number" name="attr_ref" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_ref_max" style="width: 20px;" value="0" class="txt-input" /><br>
-        <button type="roll" name="empbutton" style="width: 70px;" value="&{template:default} {{name=@{character_name}}} {{EMPATHY=[[1d10 + @{emp} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Empathy + Mod">EMPATHY</button><br>
+        <button type="roll" name="empbutton" style="width: 70px;" value="&{template:skill} {{name=@{character_name}}} {{rollname=EMPATHY}} {{roll=[[1d10 + @{emp} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Empathy + Mod">EMPATHY</button><br>
 <input type="number" name="attr_emp" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_emp_max" style="width: 20px;" value="0" class="txt-input" /><br>
-    <button type="roll" name="bodybutton" style="width: 70px;" value="&{template:default} {{name=@{character_name}}} {{BODY=[[1d10 + @{body} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Body + Mod">BODY</button><br>
+    <button type="roll" name="bodybutton" style="width: 70px;" value="&{template:skill} {{name=@{character_name}}} {{rollname=BODY}} {{roll=[[1d10 + @{body} + @{swmod} + @{extra} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Body + Mod">BODY</button><br>
 <input type="number" name="attr_body" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_body_max" style="width: 20px;" value="0" class="txt-input" /><br>    
   </div>
 </div>
@@ -41,7 +41,7 @@
       Eddies:<input type="number" name="attr_eddies" style="width: 55px;" class="txt-id"/><br>
     </div>
       <div class="id3">
-      <img alt="WAITING FOR UPDATE" name="attr_theSheetAvatar" style="width:100px;height:100px;" class="txt-id" border="1px"/><br>
+      <img alt="WAITING FOR UPDATE" name="attr_theSheetAvatar" style="width:75px;height:75px;" class="txt-id" border="1px"/><br>
       <h1>WOUND <input type="number" name="attr_damage" style="width: 14px;" value="attr_damage" class="number-menu" readonly="true"/> STUN <input type="number" name="attr_stun" style="width: 14px;" value="attr_stun" class="number-menu" readonly="true"/></h1>
     </div>
     </div>
@@ -244,7 +244,7 @@
       </div>
     </div>
     <hr>
-            Save <input type="number" name="attr_save" style="width: 20px;" class="number-id" value="@{body} + @{cool}" readonly="true"/> BTM <input type="number" name="attr_btm" style="width: 20px;" class="number-id" value="0"/> DAM + <input type="number" name="attr_dmgplus" style="width: 20px;" class="number-id" value="0"/> Run <input type="number" name="attr_run" style="width: 20px;" class="number-id" value="@{move} * 3" readonly="true"/> Leap <input type="number" name="attr_leap" style="width: 20px;" class="number-id" value="@{run} / 4" readonly="true"/> Carry <input type="number" name="attr_carry" style="width: 20px;" class="number-id" value="@{body} * 10" readonly="true"/><br>
+            Save <input type="number" name="attr_save" style="width: 25px;" class="number-id" value="@{save}"/> BTM <input type="number" name="attr_btm" style="width: 25px;" class="number-id" value="@{btm}"/> DAM + <input type="number" name="attr_dmgplus" style="width: 25px;" class="number-id" value="0"/> Run <input type="number" name="attr_run" style="width: 25px;" class="number-id" value="@{run}"/> Leap <input type="number" name="attr_leap" style="width: 25px;" class="number-id" value="@{leap}"/> Carry <input type="number" name="attr_carry" style="width: 25px;" class="number-id" value="@{carry}"/><br>
             <hr>
             <div class="armorgrid">
         <div>
@@ -302,7 +302,7 @@
                     <div class="skillgrid">
                     <fieldset class="repeating_skills">
                             <input type="hidden" name="attr_skillstat" value="@{skillstat}">
-                            <button type="roll" name="roll_skill" style="width: 15px; font-size:16px"; class="txt-btn" value="&{template:default} {{name=@{character_name}}} {{@{skillname}=[[1d10[Dice] + @{skillstat}[STAT] + @{skilllvl}[LEVEL] + @{skillmod}[MOD] @{swmod}[WOUNDED MOD] + @{extra}[Extra attack] + @{rollmod}[Roll Mod]]]}}">&#9883;</button>
+                            <button type="roll" name="roll_skill" style="width: 15px; font-size:16px"; class="txt-btn" value="&{template:skill} {{name=@{character_name}}} {{rollname=@{skillname}}} {{roll=[[1d10[Dice] + @{skillstat}[STAT] + @{skilllvl}[LEVEL] + @{skillmod}[MOD] @{swmod}[WOUNDED MOD] + @{extra}[Extra attack] + @{rollmod}[Roll Mod]]]}}">&#9883;</button>
                             <input name="attr_skillname" type="text" style="width: 100px;" class="number-menu"/>
                             <select name="attr_skillstat" style="width: 50px;" class="select-lifepath">
                                 <option value="@{int}">INTELLEGENCE</option>
@@ -346,11 +346,11 @@
                         </div>
                         </div>
                         <h3>WEAPONS
-                            <button type="roll" name="roll_init" style="width: 50px; font-size:16px"; class="txt-btn" value="&{template:default} {{name=@{character_name}}} {{INITATIVE=[[1d10[ROLL] + @{ref}[REFLEX]]]}}">INITATIVE</button></h3>
+                            <button type="roll" name="roll_init" style="width: 50px; font-size:16px"; class="txt-btn" value="&{template:skill} {{name=@{character_name}}} {{rollname=INITATIVE}} {{roll=[[1d10[ROLL] + @{ref}[REFLEX]]]}}">INITATIVE</button></h3>
                         <fieldset class="repeating_weapons">
                             <button type="roll" name="roll_weapon_dmg" style="display: none;" value="@{DMG}"></button>
                             <input type="hidden" name="attr_WeaponMod" value="@{Melee}">
-                            <button type="roll" name="roll_attack" style="width: 15px; font-size:16px"; class="txt-btn" value="&{template:default} {{name=@{character_name}}} {{@{Weaponname}=[[1d10[Roll] + @{ref}[REFLEX]  + @{wslvl}[SKILL] + @{acc}[ACCURACY] + @{swmod}[WOUNDED] + @{extra}[EXTRA ATTACK] + @{rollmod}[ROLL MOD]]]}}">&#8853;</button>
+                            <button type="roll" name="roll_attack" style="width: 15px; font-size:16px"; class="txt-btn" value="&{template:skill} {{name=@{character_name}}} {{rollname=@{Weaponname}}} {{roll=[[1d10[Roll] + @{ref}[REFLEX]  + @{wslvl}[SKILL] + @{acc}[ACCURACY] + @{swmod}[WOUNDED] + @{extra}[EXTRA ATTACK] + @{rollmod}[ROLL MOD]]]}}">&#8853;</button>
                             <input name="attr_Weaponname" type="text" style="width: 125px;" class="number-menu"/>
                             SKILL<select name="attr_Weapontype" style="width: 100px;" class="select-lifepath">
                                 <option value="Brawling}">BRAWLING</option>
@@ -368,7 +368,7 @@
                             </select> 
                             <input type="number" name="attr_wslvl" style="width: 20px;" value="0" class="number-menu"/><br>
                             ACCURACY <input type="number" name="attr_acc" style="width: 20px;" value="0" class="number-menu"/>
-                            <button type="roll" name="roll_weapon_dmg" class="txt-btn" value="&{template:default} {{name=@{character_name}}} {{DAMAGE=[[@{DMG} + @{dmgplus}]]}}">DAMAGE</button><input type="text" name="attr_DMG" style="width: 50px;" value="0" class="number-menu"/> 
+                            <button type="roll" name="roll_weapon_dmg" class="txt-btn" value="&{template:skill} {{name=@{Weaponname}}} {{rollname=DAMAGE}} {{roll=[[@{DMG} + @{dmgplus}]]}}">DAMAGE</button><input type="text" name="attr_DMG" style="width: 50px;" value="0" class="number-menu"/> 
                             CLIP <input type="number" name="attr_clip" style="width: 30px;" value="@{clip}"class="number-menu" />/<input type="number" name="attr_clip_max" style="width: 30px;" value="@{clip_max}"class="number-menu" /> 
                             RATE OF FIRE <input type="number" name="attr_rof" style="width: 20px;" value="0" class="number-menu"/>
                             <hr>
@@ -404,7 +404,7 @@
                     <div class="skillgrid">
                         <h3>WRITE THAT DOWN!</h3>
                         <hr>
-                        <textarea name="attr_notepad" style="height: 150px; width: 270px;">
+                        <textarea name="attr_notepad" style="height: 120px; width: 270px;">
                         </textarea>
                         <hr>
                 </div>
@@ -416,7 +416,96 @@
 </div>
 </div>
 </div>
-  
+
+
+<!-- Sheet Wworkers -->
+
+<script type="text/worker">
+on("change:body change:cool change:save sheet:opened", function()
+{
+  getAttrs(["body", "cool", "save", ], function(values)
+  {
+    let body = parseInt(values.body)||0;
+    let cool = parseInt(values.cool)||0;
+    let save = parseInt(values.save)||0;
+setAttrs({
+       "save" : Math.floor((body + cool) /2)
+    });
+  });
+});
+</script>
+
+<script type="text/worker">
+on("change:run change:move sheet:opened", function()
+{
+  getAttrs(["run", "move", ], function(values)
+  {
+    let run = parseInt(values.run)||0;
+    let move = parseInt(values.move)||0;
+setAttrs({
+       "run" : (move * 3)
+    });
+  });
+});
+</script>
+
+<script type="text/worker">
+on("change:run change:leap sheet:opened", function()
+{
+  getAttrs(["run", "leap", ], function(values)
+  {
+    let run = parseInt(values.run)||0;
+    let leap = parseInt(values.leap)||0;
+setAttrs({
+       "leap" : Math.floor(run / 4)
+    });
+  });
+});
+</script>
+
+<script type="text/worker">
+on("change:carry change:body sheet:opened", function()
+{
+  getAttrs(["body", "carry", ], function(values)
+  {
+    let body = parseInt(values.body)||0;
+    let carry = parseInt(values.carry)||0;
+setAttrs({
+       "carry" : (body * 10)
+    });
+  });
+});
+</script>
+
+<script type="text/worker">
+on("change:body sheet:opened", function(){
+    getAttrs(["body", "btm"], function(values) {
+        let body = parseInt(values.body)||0;
+        let btm = parseInt(values.btm)||0;
+        let result = '';
+        if (body <= 2){ 
+            result = 0;
+            }
+        else if (body >= 3 && body <= 4){ 
+            result = -1;
+            }
+        else if (body >= 5 && body <= 7){ 
+            result = -2;
+            }
+        else if (body >= 8 && body <= 9){ 
+            result = -3;
+            }
+        else if (body === 10){ 
+            result = -4;
+            }
+        else if (body >= 11){ 
+            result = -5;
+            }
+            setAttrs({ 'btm': result });
+    });
+});
+</script>
+
 <script type="text/worker">
 on("change:damage sheet:opened", function(){
     getAttrs(["damage", "stun"], function(values) {
@@ -526,3 +615,13 @@ setAttrs({
   });
 });
 </script>
+
+<!-- ROLL TEMPLATES -->
+
+<!-- DEFAULT -->
+<rolltemplate class="sheet-rolltemplate-skill">
+    <div class="sheet-template-container">
+		<div class="sheet-template-header"><span>{{rollname}}</span></div>
+		<div class="sheet-template-row-subhead">{{roll}}</div>
+		<div class="sheet-template-row">{{name}}</div>
+</rolltemplate>
