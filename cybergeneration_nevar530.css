@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -42,7 +44,7 @@ input::-webkit-inner-spin-button {
 
 
 .txt-btn{
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Kalam', cursive;
     font-size: 15px;
     Background: ghostwhite;
     margin: 0px 0px 0px 0px;
@@ -51,8 +53,14 @@ input::-webkit-inner-spin-button {
     border-color: black;
 }
 
+.txt-btn:hover {
+    Background: blue;
+    color: white;
+    font-weight: bold;
+}
+
 .number-menu{
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Kalam', cursive;
     font-size: 12px;
     Background: ghostwhite;
     margin: 0px 0px 0px 0px;
@@ -64,7 +72,7 @@ input::-webkit-inner-spin-button {
 }
 
 .number-id{
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Kalam', cursive;
     font-size: 15px;
     Background: ghostwhite;
     margin: 0px 0px 0px 0px;
@@ -75,7 +83,7 @@ input::-webkit-inner-spin-button {
 }
 
 .txt-id{
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Kalam', cursive;
     font-size: 12px;
     padding: 0px;
     margin:1px;
@@ -87,8 +95,10 @@ input::-webkit-inner-spin-button {
 }
 
 .txt-input{
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Kalam', cursive;
     font-size: 20px;
+    font-weight: bold;
+    color: red;
     text-align: center;
     margin: 0px 0px 0px 0px;
     Background: none;
@@ -96,7 +106,7 @@ input::-webkit-inner-spin-button {
 }
 
 select.select-lifepath {
-  width: 40px;
+  width: 50px;
   height: 20px;
   margin: 0px 0px 0px 0px;
   padding: 2px 0px 0px 2px;
@@ -104,23 +114,23 @@ select.select-lifepath {
   background-color: Gainsboro ;
     border-width: 2px 1px 2px 3px;
     border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .container{
   display: grid;
-  grid-template-columns: 120px 350px;
+  grid-template-columns: 150px 450px;
   gap: 5px 5px; 
   grid-template-areas: 
     "box1 box2"
     "box1 box3"
     ". .";
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Kalam', cursive;
 }
 
 .idgrid{
   display: grid;
-  grid-template-columns: 175px 100px;
+  grid-template-columns: 225px 175px;
   gap: 5px 5px; 
   grid-template-areas: 
     "id1 id3"
@@ -163,7 +173,7 @@ select.select-lifepath {
 }
 
 .box{
-  padding:1px;
+  padding:5px 5px 5px 5px;
   background:white;
   border: solid black;
   border-color: black;
@@ -180,12 +190,12 @@ background: linear-gradient(top right, white, Gainsboro );
   border-radius:200% 24% 92% 25%/4% 95% 6% 95%;
   transform: rotate(1deg);
   text-align: center;
-  height: 575px;
+  height: 650px;
 }
 .box2{
   grid-area: box2;
   text-align: center;
-  height: 355px;
+  height: 375px;
   border-width: 3px 3px 5px 5px;
   border-radius:4% 5% 6% 95%/95% 54% 20% 5%;
   transform: rotate(-1deg);
@@ -268,13 +278,22 @@ background: linear-gradient(top right, white, Gainsboro );
   text-align: left;
 }
 
+.savegrid {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2px;
+  padding: 1px;
+  text-align: center;
+  font-size: 15px;
+}
+
 .armorgrid {
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 2px;
   padding: 1px;
   text-align: center;
-
+    font-size: 12px;
 }
 
 /* Tooltip container */
@@ -455,7 +474,7 @@ input.dot[value="40"] ~ button.gt-41 > span.checked {
 /* ROLL TEMPLATES */
 
 .sheet-rolltemplate-skill div.sheet-template-container {
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Kalam', cursive;
     padding:1px;
     width: 75%;
   border: solid black;
