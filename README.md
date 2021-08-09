@@ -8,4 +8,4 @@ Sheet can be play tested
 
 Player Avatar dont loading waiting for Roll20 update for Sheet Images
 
-Version 0.9 <PLAY TESTING>
+Version 0.95 <PLAY TESTING>
