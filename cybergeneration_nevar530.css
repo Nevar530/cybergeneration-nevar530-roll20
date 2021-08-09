@@ -134,7 +134,7 @@ select.select-lifepath {
 
 .container{
   display: grid;
-  grid-template-columns: 150px 460px;
+  grid-template-columns: 150px 480px;
   gap: 5px 5px; 
   grid-template-areas: 
     "box1 box2"
