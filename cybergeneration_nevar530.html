@@ -1,25 +1,25 @@
 <div class="container">
 <div class="box box1">
   <div class="oddboxinner">
-      <h2>Stats:</h2>
+      <h3>Stats:</h3>
     <button type="roll" name="intbutton" style="width: 100px;" value="&{template:skill} {{name=@{character_name}}} {{rollname=INTELLEGENCE}} {{roll=[[1d10 + @{int} + @{swmod} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Intellegence + Mod">Intellegence</button><br>
-<input type="number" name="attr_int" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_int_max" style="width: 20px;" value="0" class="txt-input" /><br>
+<input type="number" name="attr_int" style="width: 50px;" value="0" class="txt-input"/><br>
         <button type="roll" name="coolbutton" style="width: 100px;" value="&{template:skill} {{name=@{character_name}}} {{rollname=COOL}} {{roll=[[1d10 + @{cool} + @{swmod} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Cool + Mod">Cool</button><br>
-<input type="number" name="attr_cool" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_cool_max" style="width: 20px;" value="0" class="txt-input" /><br>
+<input type="number" name="attr_cool" style="width: 50px;" value="0" class="txt-input"/><br>
         <button type="roll" name="movebutton" style="width: 100px;" value="&{template:skill} {{name=@{character_name}}} {{rollname=MOVEMENT}} {{roll=[[1d10 + @{move} + @{swmod} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Movement + Mod">Movement</button><br>
-<input type="number" name="attr_move" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_move_max" style="width: 20px;" value="0" class="txt-input" /><br>
+<input type="number" name="attr_move" style="width: 50px;" value="0" class="txt-input"/><br>
         <button type="roll" name="techbutton" style="width: 100px;" value="&{template:skill} {{name=@{character_name}}} {{rollname=TECHNICAL}} {{roll=[[1d10 + @{tech} + @{swmod} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Technical + Mod">Technical</button><br>
-<input type="number" name="attr_tech" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_tech_max" style="width: 20px;" value="0" class="txt-input" /><br>
-        <button type="roll" name="attrbutton" style="width: 100px;" value="&{template:skill} {{name=@{character_name}}} {{rollname=ATTRACTIVENESS}} {{roll=[[1d10 + @{attr} + @{swmod} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Attractiveness + Mod">Attacractive</button><br>
-<input type="number" name="attr_attr" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_attr_max" style="width: 20px;" value="0" class="txt-input" /><br>
+<input type="number" name="attr_tech" style="width: 50px;" value="0" class="txt-input"/><br>
+        <button type="roll" name="attrbutton" style="width: 100px;" value="&{template:skill} {{name=@{character_name}}} {{rollname=ATTRACTIVE}} {{roll=[[1d10 + @{attr} + @{swmod} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Attractiveness + Mod">Attractive</button><br>
+<input type="number" name="attr_attr" style="width: 50px;" value="0" class="txt-input"/><br>
         <button type="roll" name="luckbutton" style="width: 100px;" value="&{template:skill} {{name=@{character_name}}} {{rollname=LUCK}} {{roll=[[1d10 + @{luck} + @{swmod} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Luck + Mod">Luck</button><br>
-<input type="number" name="attr_luck" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_luck_max" style="width: 20px;" value="0" class="txt-input" /><br>
+<input type="number" name="attr_luck" style="width: 50px;" value="0" class="txt-input"/><br>
         <button type="roll" name="refbutton" style="width: 100px;" value="&{template:skill} {{name=@{character_name}}} {{rollname=REFLEX}} {{roll=[[1d10 + @{ref} + @{swmod} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Reflex + Mod">Reflex</button><br>
-<input type="number" name="attr_ref" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_ref_max" style="width: 20px;" value="0" class="txt-input" /><br>
+<input type="number" name="attr_ref" style="width: 50px;" value="0" class="txt-input"/><br>
         <button type="roll" name="empbutton" style="width: 100px;" value="&{template:skill} {{name=@{character_name}}} {{rollname=EMPATHY}} {{roll=[[1d10 + @{emp} + @{swmod} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Empathy + Mod">Empathy</button><br>
-<input type="number" name="attr_emp" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_emp_max" style="width: 20px;" value="0" class="txt-input" /><br>
+<input type="number" name="attr_emp" style="width: 50px;" value="0" class="txt-input"/><br>
     <button type="roll" name="bodybutton" style="width: 100px;" value="&{template:skill} {{name=@{character_name}}} {{rollname=BODY}} {{roll=[[1d10 + @{body} + @{swmod} + @{rollmod}]]}}" class="txt-btn" "tooltip" title="1d10 + Body + Mod">Body</button><br>
-<input type="number" name="attr_body" style="width: 20px;" value="0" class="txt-input"/>/<input type="number" name="attr_body_max" style="width: 20px;" value="0" class="txt-input" /><br>    
+<input type="number" name="attr_body" style="width: 50px;" value="0" class="txt-input"/><br>    
   </div>
 </div>
 <div class="box box2">
@@ -31,19 +31,19 @@
             <div class="idcard">
                 <div class="idgrid">   
       <div class="id1">
-      //:Cybergeneration.v2<br>
+      <h4>//:Cybergeneration.v2</h4>
     </div>
     <div class="id2">
-      Handle:<input type="text" name="attr_character_name" style="width: 125px;" class="txt-id" value="@{character_name}" /><br>
-      Yogang:<input type="text" name="attr_yogang" style="width: 125px;" class="txt-id" /><br>
-      Cybergen Type:<input type="text" name="attr_cybergentype" style="width: 100px;" class="txt-id" /><br>
-      IP:<input type="number" name="attr_ip" style="width: 55px;" class="txt-id"/> 
-      Eddies:<input type="number" name="attr_eddies" style="width: 55px;" class="txt-id"/><br>
+      Handle:<input type="text" name="attr_character_name" style="width: 160px;" class="txt-id" value="@{character_name}" /><br>
+      Yogang:<input type="text" name="attr_yogang" style="width: 160px;" class="txt-id" /><br>
+      Cybergen Type:<input type="text" name="attr_cybergentype" style="width: 125px;" class="txt-id" /><br>
+      IP:<input type="number" name="attr_ip" style="width: 75px;" class="txt-id"/> 
+      Eddies:<input type="number" name="attr_eddies" style="width: 75px;" class="txt-id"/><br>
     </div>
       <div class="id3">
       <img alt="WAITING FOR UPDATE" name="attr_theSheetAvatar" style="width:75px;height:75px;" class="txt-id" border="1px"/><br>
-      <h1>Wound <input type="number" name="attr_damage" style="width: 14px;" value="attr_damage" class="number-menu" readonly="true"/> 
-      Stun <input type="number" name="attr_stun" style="width: 14px;" value="attr_stun" class="number-menu" readonly="true"/></h1>
+      <h1>Wound <input type="number" name="attr_damage" style="width: 20px;" value="attr_damage" class="number-menu" readonly="true"/> 
+      Stun <input type="number" name="attr_stun" style="width: 20px;" value="attr_stun" class="number-menu" readonly="true"/></h1>
     </div>
     </div>
                 </div>
@@ -52,19 +52,19 @@
   <div class="idcard">
    <div class="idgrid">   
     <div class="id2">
-      Name:<input type="text" name="attr_name" style="width: 140px;" class="txt-id" /><br>
-      Legal:<input type="text" name="attr_legal" style="width: 140px;" class="txt-id" /><br>
-      Identification:<input type="text" name="attr_id" style="width: 101px;" class="txt-id" /><br>
-      Residence:<input type="text" name="attr_residence" style="width: 123px;" class="txt-id"/><br>
-      Date of Birth:<input type="text" name="attr_dob" style="width: 100px;" class="txt-id"/>
+      Name:<input type="text" name="attr_name" style="width: 160px;" class="txt-id" /><br>
+      Legal:<input type="text" name="attr_legal" style="width: 160px;" class="txt-id" /><br>
+      Identification:<input type="text" name="attr_id" style="width: 121px;" class="txt-id" /><br>
+      Residence:<input type="text" name="attr_residence" style="width: 143px;" class="txt-id"/><br>
+      Date of Birth:<input type="text" name="attr_dob" style="width: 120px;" class="txt-id"/>
     </div>
       <div class="id3">
-      AGE:<input type="text" name="attr_age" style="width: 61px;" class="txt-id"/><br>
-      Gender:<input type="text" name="attr_gender" style="width: 45px;" class="txt-id"/><br>
-      HAIR:<input type="text" name="attr_hair" style="width: 58px;" class="txt-id"/><br>
-      Eyes:<input type="text" name="attr_eyes" style="width: 60px;" class="txt-id"/><br>
-      HT:<input type="text" name="attr_height" style="width: 20px;" class="txt-id"/>
-      WT:<input type="text" name="attr_weight" style="width: 20px;" class="txt-id"/>
+      AGE:<input type="text" name="attr_age" style="width: 71px;" class="txt-id"/><br>
+      Gender:<input type="text" name="attr_gender" style="width: 55px;" class="txt-id"/><br>
+      HAIR:<input type="text" name="attr_hair" style="width: 68px;" class="txt-id"/><br>
+      Eyes:<input type="text" name="attr_eyes" style="width: 70px;" class="txt-id"/><br>
+      HT:<input type="text" name="attr_height" style="width: 30px;" class="txt-id"/>
+      WT:<input type="text" name="attr_weight" style="width: 30px;" class="txt-id"/>
     </div>
     </div>
     </div>
@@ -371,6 +371,7 @@
                         EV <input type="number" name="attr_a3enc" style="width: 20px;" value="0" class="number-menu"/>
                         </div>
                         </div>
+                        <hr>
                         <h3>Weapons
                             <button type="roll" name="roll_init" style="width: 100px; font-size:16px"; class="txt-btn" value="&{template:skill} {{name=@{character_name}}} {{rollname=INITATIVE}} {{roll=[[1d10[ROLL] + @{ref}[REFLEX]]]}}">Initative</button></h3>
                         <fieldset class="repeating_weapons">
@@ -406,10 +407,10 @@
             <div class="block-c">
                 <h3>TELL ME WHERE IT HURTS!</h3>
                 <fieldset class="repeating_health">
-                            Location <input type="text" name="attr_medicallocation" style="width: 75px;" value="0" class="number-menu"/>
-                            Damage <input type="text" name="attr_medicaldmg" style="width: 75px;" value="0" class="number-menu"/>
-                            Heal <input type="text" name="attr_medicalheal" style="width: 75px;" value="0" class="number-menu"/><br>
-                            Description <input type="text" name="attr_medicaldesc" style="width: 270px;" value="0" class="number-menu"/>
+                            Location <input type="text" name="attr_medicallocation" style="width: 85px;" value="0" class="number-menu"/>
+                            Damage <input type="text" name="attr_medicaldmg" style="width: 85px;" value="0" class="number-menu"/>
+                            Heal <input type="text" name="attr_medicalheal" style="width: 85px;" value="0" class="number-menu"/><br>
+                            Description <input type="text" name="attr_medicaldesc" style="width: 325px;" value="0" class="number-menu"/>
                             <hr>
                         </fieldset>
             </div> 
@@ -419,8 +420,8 @@
                     <div class="skillgrid">
                         <h3>ALL YOUR STUFF!</h3>
                     <fieldset class="repeating_items">
-                            Item <input type="text" name="attr_stuff" style="width: 80px;" value="0" class="number-menu"/>
-                            Cost <input type="text" name="attr_cost" style="width: 30px;" value="0" class="number-menu"/>
+                            Item <input type="text" name="attr_stuff" style="width: 100px;" value="0" class="number-menu"/>
+                            Cost <input type="text" name="attr_cost" style="width: 35px;" value="0" class="number-menu"/>
                             <hr>
                         </fieldset>
                 </div>
@@ -432,9 +433,8 @@
                     <div class="skillgrid">
                         <h3>WRITE THAT DOWN!</h3>
                         <hr>
-                        <textarea name="attr_notepad" style="height: 120px; width: 270px;">
+                        <textarea name="attr_notepad" style="height: 170px; width: 400px;">
                         </textarea>
-                        <hr>
                 </div>
             </div>
             </div>            
@@ -599,50 +599,6 @@ on("change:damage sheet:opened", function(){
   });
 </script>
 
-<script type="text/worker">
-on("change:ref_max change:tev sheet:opened", function()
-{
-  getAttrs(["ref_max", "tev"], function(values)
-  {
-  let ref_max = parseInt(values.ref_max)||0;
-  let tev = parseInt(values.tev)||0;
-  let ref = (ref_max - tev)
-      setAttrs({
-       "ref" : (ref)
-    });
-  });
-});
-</script>
-
-<script type="text/worker">
-on("change:move_max change:tev sheet:opened", function()
-{
-  getAttrs(["move_max", "tev"], function(values)
-  {
-  let move_max = parseInt(values.move_max)||0;
-  let tev = parseInt(values.tev)||0;
-  let move = (move_max - tev)
-      setAttrs({
-       "move" : (move)
-    });
-  });
-});
-</script>
-
-<script type="text/worker">
-on("change:a1enc change:a2enc change:a3enc sheet:opened", function()
-{
-  getAttrs(["a1enc", "a2enc", "a3enc", "tev"], function(values)
-  {
-    let a1enc = parseInt(values.a1enc)||0;
-    let a2enc = parseInt(values.a2enc)||0;
-    let a3enc = parseInt(values.a3enc)||0;
-setAttrs({
-       "tev" : (a1enc + a2enc + a3enc)
-    });
-  });
-});
-</script>
 
 <!-- ROLL TEMPLATES -->
 
