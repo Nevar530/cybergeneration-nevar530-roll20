@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -8,7 +8,8 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 .charsheet hr{
-    margin: 2px;
+    margin: 4px;
+    border: .5px solid grey;
 }
 
 .hidden {
@@ -42,6 +43,19 @@ input::-webkit-inner-spin-button {
     padding: 0px;
 }
 
+.charsheet h3{
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.charsheet h4{
+    font-family: 'Bangers', cursive;
+    font-size: 25px;
+    margin: 4px;
+    padding: 0px;
+}
 
 .txt-btn{
     font-family: 'Kalam', cursive;
@@ -61,7 +75,7 @@ input::-webkit-inner-spin-button {
 
 .number-menu{
     font-family: 'Kalam', cursive;
-    font-size: 12px;
+    font-size: 14px;
     Background: ghostwhite;
     margin: 0px 0px 0px 0px;
     border-width: 2px 1px 2px 3px;
@@ -84,7 +98,7 @@ input::-webkit-inner-spin-button {
 
 .txt-id{
     font-family: 'Kalam', cursive;
-    font-size: 12px;
+    font-size: 14px;
     padding: 0px;
     margin:1px;
     Background: ghostwhite;
@@ -95,14 +109,15 @@ input::-webkit-inner-spin-button {
 }
 
 .txt-input{
-    font-family: 'Kalam', cursive;
-    font-size: 20px;
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
     font-weight: bold;
     color: red;
     text-align: center;
     margin: 0px 0px 0px 0px;
     Background: none;
     border-width: 0px;
+    transform: rotate(-4deg);
 }
 
 select.select-lifepath {
@@ -119,7 +134,7 @@ select.select-lifepath {
 
 .container{
   display: grid;
-  grid-template-columns: 150px 450px;
+  grid-template-columns: 150px 460px;
   gap: 5px 5px; 
   grid-template-areas: 
     "box1 box2"
@@ -195,7 +210,7 @@ background: linear-gradient(top right, white, Gainsboro );
 .box2{
   grid-area: box2;
   text-align: center;
-  height: 375px;
+  height: 385px;
   border-width: 3px 3px 5px 5px;
   border-radius:4% 5% 6% 95%/95% 54% 20% 5%;
   transform: rotate(-1deg);
@@ -207,7 +222,7 @@ background: linear-gradient(top right, white, Gainsboro );
   border-width: 5px 3px 3px 5px;
   border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
   transform: rotate(1deg);
-    font-size:12px;
+    font-size:14px;
 }
 
 .box4{
