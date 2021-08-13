@@ -1,6 +1,8 @@
 # cybergeneration-nevar530-roll20 <br>
 Character Sheet for Cybergeneration <br>
-
+Version 1.0 <Play testing completed> <br>
+ 
+ 
 Updated Stat look<br>
 
 Added new fonts <br>
@@ -15,4 +17,4 @@ Sheet can be play tested <br>
 
 Player Avatar dont loading waiting for Roll20 update for Sheet Images <br>
 
-Version 0.98 <PLAY TESTING> <br>
+
