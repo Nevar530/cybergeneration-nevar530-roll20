@@ -115,7 +115,9 @@ input::-webkit-inner-spin-button {
     color: red;
     text-align: center;
     margin: 0px 0px 0px 0px;
-    Background: none;
+    text-shadow: white .5px .5px 0px, white -.5px -.5px 0px, 3px 3px 0px black;
+    background: rgb(255,255,255);
+    background: linear-gradient(-8deg, transparent 0%, transparent 33%, BLACK 35%, BLACK 65%, transparent 67%, transparent 100%);
     border-width: 0px;
     transform: rotate(-4deg);
 }
